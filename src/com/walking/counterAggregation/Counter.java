@@ -5,10 +5,13 @@ public class Counter {
     private int counter;
     private final String measureUnit;
 
+    static int arrCounter = 0;
+
     Counter (String name, int counter){
         this.name=name;
         this.counter = counter;
         this.measureUnit = "Кубический метр";
+        ++arrCounter;
 
     }
 
@@ -42,7 +45,9 @@ public class Counter {
 
         return counter;
     }
-    public void z
+    public void zeroing(){
+        counter = 0;
+    }
 
     public int increment() {
         return ++counter;
