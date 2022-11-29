@@ -1,13 +1,12 @@
 package com.walking.counterAggregation.Animal2;
 
 public class Cow extends Animal{
+
     Cow(String name){
-        super(name);
+        super(name, "moo");
     }
     final void moo(){
-        System.out.println("moo");
+        System.out.println(Sound(sound));
     }
-    public String toString(){
-        return "moo";
-    }
+
 }

@@ -12,8 +12,9 @@ public class Main {
         AnimalSound(animals);
     }
     public static void AnimalSound(Animal ...animals){
+
         for( int i = 0; i < animals.length; i++){
-            System.out.println(animals[i].name + " says " + animals[i].toString());
+            System.out.println(animals[i].name + " says " + animals[i].Sound(animals[i].sound));
         }
         System.out.println("What Does The Fox Say?");
     }
